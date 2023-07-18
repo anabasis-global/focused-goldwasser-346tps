@@ -1,6 +1,9 @@
 import Image from "next/image";
 
 export default function Home({ data }) {
+  if (data) {
+    console.log(data);
+  }
   return (
     <main className={"main"}>
       <header>Header</header>
