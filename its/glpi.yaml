@@ -1,0 +1,4 @@
+proxy:
+  domain: its.anabasis.pro
+  location: /glpi
+  proxy: http://192.168.1.9/

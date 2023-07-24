@@ -1,17 +1,42 @@
-const express = require("express");
-const usersRouter = require("./routes/users");
-const contentRouter = require("./routes/content");
-const app = express();
-const port = 3000;
 
-app.get("/", (req, res) => {
-  res.redirect("localhost:3000");
-});
 
-app.use("/users", usersRouter);
+const axios = require('axios')
 
-app.use("/content", usersRouter);
+const shell = require('shelljs')
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+const path = require('path')
+
+
+const powershell = require('powershell')
+//shell.exec("cd frontend && yarn install")
+
+
+
+try {
+
+   let auth = axios.get('https://iz.anabasis.pro/auth').then(response => response).catch(e => e).then(data => console.log(data))
+
+
+   let authHeaders = [
+
+   ]
+
+   
+} catch (error) {
+    
+}
+
+
+
+async function handler(_req, _res) {
+
+    console.log(_req)
+
+
+    const res = await fetch(`https://api.github.com/meta`);
+    const data = await res.json();
+  
+    // Pass data to the page via props
+    return { props: { data } };
+
+}

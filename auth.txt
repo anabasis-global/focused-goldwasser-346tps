@@ -1,0 +1,8 @@
+HTTP/2 401 
+server: Web server
+date: Mon, 24 Jul 2023 21:59:17 GMT
+set-cookie: XCNSIOEGJR=YZWDFYDIBQKPXHHU; Path=/; Secure
+www-authenticate: x-ndw2-interactive realm="Keenetic Giga" challenge="QFOODMZXHZFGFSNZDWQXXAPHBSVGBICC" session_id="YZWDFYDIBQKPXHHU" session_cookie="XCNSIOEGJR"
+x-ndm-realm: Keenetic Giga
+x-ndm-challenge: QFOODMZXHZFGFSNZDWQXXAPHBSVGBICC
+

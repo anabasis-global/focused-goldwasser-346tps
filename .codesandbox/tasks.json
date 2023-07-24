@@ -3,15 +3,15 @@
   "setupTasks": [
     {
       "name": "Install Dependencies",
-      "command": "yarn install"
+      "command": "cd frontend && yarn install"
     }
   ],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
-    "start": {
+    "dev": {
       "name": "start",
-      "command": "yarn start",
+      "command": "cd frontend && next dev",
       "runAtStart": true,
       "preview": {
         "port": 3000
@@ -19,7 +19,7 @@
     },
     "build": {
       "name": "build",
-      "command": "yarn build",
+      "command": "cd frontend && yarn build",
       "runAtStart": false
     }
   }
